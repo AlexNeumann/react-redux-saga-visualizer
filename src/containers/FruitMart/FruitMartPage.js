@@ -24,6 +24,10 @@ class FruitMartPage extends Component {
 			color,
 			searchString,
 		} = this.props.searchFilter;
+		const {
+			isSending,
+			isFirstSearch,
+		} = this.props.eventHandling;
 		return (
 			<div className={styles.tabBox}>
 				<Form inline>
@@ -31,7 +35,7 @@ class FruitMartPage extends Component {
 						<ControlLabel>Search</ControlLabel>{' '}
 						<FormControl
 							type="text"
-							placeholder="Search?"
+							placeholder="Name..."
 							className={styles.inputText}
 							value={searchString}
 							onChange={(e) => this.onChangeFilter('searchString', e.target.value)}
@@ -76,18 +80,24 @@ class FruitMartPage extends Component {
 				</Form>
 
 				<Row className={styles.rowResults}>
-					{this.props.eventHandling.isSending ?
-						(
-							<div className={styles.spinner}>
-								<Loader
-									type="Watch"
-									color="#535784"
-									height="100"
-									width="100"
-								/>
-								<div>Artifically slowed down...</div>
-							</div>
-						)
+					{isSending && (
+						<div className={styles.spinner}>
+							<Loader
+								type="Watch"
+								color="#535784"
+								height="100"
+								width="100"
+							/>
+							<div>Artifically slowed down...</div>
+						</div>
+					)}
+
+					{isFirstSearch && (
+						<div className={styles.spinner}>Click search to get started!</div>
+					)}
+
+					{(!isFirstSearch && !isSending && this.props.items.length === 0) ?
+						<div className={styles.spinner}>Your search yielded no results :(</div>
 						:
 						(
 							this.props.items.map((item, i) => (
@@ -97,7 +107,8 @@ class FruitMartPage extends Component {
 									color={item.color}
 									type={item.type}
 								/>
-							)))
+							))
+						)
 					}
 				</Row>
 			</div>

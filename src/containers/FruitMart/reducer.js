@@ -8,6 +8,7 @@ import {
 const initialState = {
 	eventHandling: {
 		isSending: false,
+		isFirstSearch: true,
 	},
 	searchFilter: {
 		type: 'both',
@@ -33,6 +34,7 @@ export default function FruitMartReducer(state = initialState, action) {
 			eventHandling: {
 				...state.eventHandling,
 				isSending: true,
+				isFirstSearch: false,
 			},
 			items: [],
 		};

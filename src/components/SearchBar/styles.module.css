@@ -1,0 +1,39 @@
+.box {
+	margin: 10px;
+}
+
+.inputSearchBar {
+	padding: 10px;
+	padding-left: 20px;
+	height: 40px;
+	border-radius: 20px;
+	border-color: #d3d3d3;
+	border-width: 1px;
+	background-color: #f1f2f4;
+	box-shadow: none;
+	outline: none;
+	-webkit-appearance: none;
+	font-size: 16px;
+}
+
+.inputSearchBar:focus {
+	outline: none;
+	border-color: #d3d3d3;
+	box-shadow: none;
+}
+
+.inputSearchBar:hover {
+	background-color: #dedede;
+}
+
+.inputSearchButton {
+	height: 40px;
+	border-radius: 20px;
+	border-color: #d3d3d3;
+	border-width: 1px;
+	background-color: #f1f2f4;
+}
+
+.FormGroupNoMargin {
+	margin-bottom: 0px;
+}

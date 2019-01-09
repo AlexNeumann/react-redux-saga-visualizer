@@ -1,0 +1,28 @@
+.colCustom {
+	min-height: 800px;
+	background: white;
+	padding: 10px;
+	height: 800px;
+}
+
+.colDivider {
+	border-right: 1px solid #ddd;
+}
+
+.colHistory {
+	background: #f5deb3;
+	color: #616161;
+	font-weight: 600;
+}
+
+.colPlayground {
+	background: #f5f5f5;
+	color: #616161;
+	font-weight: 600;
+}
+
+.colStore {
+	background: #dbddf7;
+	color: #616161;
+	font-weight: 600;
+}

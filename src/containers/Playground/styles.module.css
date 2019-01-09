@@ -1,0 +1,23 @@
+.tabsCustom {
+
+}
+
+.tabsCustom ul {
+	display: flex;
+	border: none;
+}
+
+.tabsCustom ul li {
+	flex: 1;
+	border: none;
+}
+
+.tabsCustom ul li a {
+	border-radius: 0px;
+	border: none !important;
+	text-align: center;
+}
+
+.tabCustom ul li a:hover, a:focus {
+	outline: none;
+}

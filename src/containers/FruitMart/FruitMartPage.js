@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col, Form, FormGroup, ControlLabel, FormControl, Button, MenuItem } from 'react-bootstrap';
+import { Row, Form, FormGroup, ControlLabel, FormControl, Button } from 'react-bootstrap';
 import Loader from 'react-loader-spinner';
 
 import styles from './styles.module.css';
-import FruitData from '../../assets/items';
 
 import FruitTile from '../../components/FruitTile';
 

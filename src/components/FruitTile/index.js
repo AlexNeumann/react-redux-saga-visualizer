@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col } from 'react-bootstrap';
+import { } from 'react-bootstrap';
 
 import styles from './styles.module.css';
 

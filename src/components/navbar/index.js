@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
-import { NavLink, Link } from 'react-router-dom';
+import { Navbar } from 'react-bootstrap';
+import { } from 'react-router-dom';
 
 import styles from './styles.module.css';
 

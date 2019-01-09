@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { Grid, Row, Col } from 'react-bootstrap';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Grid } from 'react-bootstrap';
 
 import { store } from './configureStore';
 import './index.css';

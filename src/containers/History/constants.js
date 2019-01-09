@@ -1,2 +1,0 @@
-export const
-	HISTORY_CLEAR_LOG = 'HISTORY_CLEAR_LOG';

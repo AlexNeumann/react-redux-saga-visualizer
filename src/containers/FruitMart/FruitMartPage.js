@@ -18,6 +18,12 @@ class FruitMartPage extends Component {
 		this.props.dispatchSendSearchFruits(this.props.searchFilter)
 	}
 
+	onPressKeySubmit = (e) => {
+		if (e.key === 'Enter') {
+			this.onStartSearch();
+		}
+	}
+
 	onDismissError = () => {
 		this.props.dispatchDismissError();
 	}
@@ -49,7 +55,7 @@ class FruitMartPage extends Component {
 						/>
 					</FormGroup>
 				</Form> */}
-				<Form inline>
+				<Form inline onSubmit={e => { e.preventDefault(); }}>
 					<FormGroup className={styles.formGrp} controlId="type">
 						<ControlLabel>Search</ControlLabel>{' '}
 						<FormControl
@@ -57,6 +63,7 @@ class FruitMartPage extends Component {
 							placeholder="Name..."
 							className={styles.inputText}
 							value={searchString}
+							onKeyPress={(e) => this.onPressKeySubmit(e)}
 							onChange={(e) => this.onChangeFilter('searchString', e.target.value)}
 						/>
 					</FormGroup>

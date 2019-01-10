@@ -13,7 +13,7 @@ class ErrorDialog extends Component {
 					inform the user that their request was unsuccessful. A failed
 					saga request sets our "requestFailed" to true. The next time
 					render() is called, we display the error message. Once dismissed,
-					"requestFailed" we fire a new <strong>action</strong> to set it back to false.
+					we fire a new <strong>action</strong> to set it back to false.
 				</p>
 				<Button bsStyle="danger" onClick={this.props.onDismiss}>Dismiss</Button>
 			</Alert>

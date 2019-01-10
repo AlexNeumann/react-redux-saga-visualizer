@@ -1,7 +1,7 @@
 {
   "main.css": "/react-redux-saga-visualizer/static/css/main.6a15587f.chunk.css",
-  "main.js": "/react-redux-saga-visualizer/static/js/main.531c584e.chunk.js",
-  "main.js.map": "/react-redux-saga-visualizer/static/js/main.531c584e.chunk.js.map",
+  "main.js": "/react-redux-saga-visualizer/static/js/main.38852080.chunk.js",
+  "main.js.map": "/react-redux-saga-visualizer/static/js/main.38852080.chunk.js.map",
   "static/css/1.642f89c0.chunk.css": "/react-redux-saga-visualizer/static/css/1.642f89c0.chunk.css",
   "static/js/1.16521def.chunk.js": "/react-redux-saga-visualizer/static/js/1.16521def.chunk.js",
   "static/js/1.16521def.chunk.js.map": "/react-redux-saga-visualizer/static/js/1.16521def.chunk.js.map",
@@ -10,6 +10,6 @@
   "static/css/1.642f89c0.chunk.css.map": "/react-redux-saga-visualizer/static/css/1.642f89c0.chunk.css.map",
   "static/css/main.6a15587f.chunk.css.map": "/react-redux-saga-visualizer/static/css/main.6a15587f.chunk.css.map",
   "index.html": "/react-redux-saga-visualizer/index.html",
-  "precache-manifest.06b968edd973ded2e37ff4f945088b25.js": "/react-redux-saga-visualizer/precache-manifest.06b968edd973ded2e37ff4f945088b25.js",
+  "precache-manifest.34c09be3f41f0d2c38ab30914b4d479c.js": "/react-redux-saga-visualizer/precache-manifest.34c09be3f41f0d2c38ab30914b4d479c.js",
   "service-worker.js": "/react-redux-saga-visualizer/service-worker.js"
 }

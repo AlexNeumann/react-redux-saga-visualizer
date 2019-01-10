@@ -9,7 +9,8 @@
 }
 
 .colHistory {
-	background: #f5deb3;
+	/* background: #f5deb3; */
+	background: white;
 	color: #616161;
 	font-weight: 600;
 	height: 900px;

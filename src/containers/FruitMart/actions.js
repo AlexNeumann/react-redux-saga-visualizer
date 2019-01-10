@@ -3,6 +3,7 @@ import {
 	SEND_SEARCH_FRUITS,
 	RECEIVE_SEARCH_FRUITS,
 	FAILED_SEARCH_FRUITS,
+	DISMISS_ERROR,
 } from './constants';
 
 export const actionChangeFilter = (filterName, value) => ({
@@ -23,4 +24,8 @@ export const actionReceiveSearchFruits = (items) => ({
 
 export const actionFailedSearchFruits = () => ({
 	type: FAILED_SEARCH_FRUITS,
+});
+
+export const actionDismissError = () => ({
+	type: DISMISS_ERROR,
 });

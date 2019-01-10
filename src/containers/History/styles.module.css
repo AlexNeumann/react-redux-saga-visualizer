@@ -37,12 +37,14 @@
 }
 
 .entryHL {
-	background: #efd4a3;
+	background: #3b3d56;
+	color: white;
 }
 
 .actionEntry {
 	padding: 10px 5px 10px 5px;
-	border-bottom: 1px solid #d4b783;
+	/* border-bottom: 1px solid #d4b783; */
+	border-bottom: 1px solid #e0e0e0;
 	-webkit-animation: fadein 0.75s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 0.75s; /* Firefox < 16 */
         -ms-animation: fadein 0.75s; /* Internet Explorer */

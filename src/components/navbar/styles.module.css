@@ -1,5 +1,5 @@
 .navbarCustom {
-	background-color: #343652;
+	background-color: #3b3d56;
 	border-radius: 0px;
 	border: none;
 	border-bottom: 2px solid #FFC107;
@@ -8,6 +8,7 @@
 
 .navbarCustom a {
 	color: white !important;
+	font-weight: 500;
 }
 
 .navbarCustom a:hover, a:active, a:focus {

@@ -13,8 +13,14 @@ import { simulateSearch } from '../../assets/searchItems';
 function* searchItems(action) {
 	try {
 		const params = action.searchParams;
+
 		// slow down request to simulate server communication
 		yield delay(2000);
+
+		// if forceFail is set, let request error out
+		if (params.forceFail) {
+			throw 500;
+		}
 		const items = simulateSearch(params);
 		yield put(actionReceiveSearchFruits(items));
 	} catch (e) {

@@ -12,6 +12,7 @@ class HistoryPage extends Component {
 
 	render() {
 		const entryLength = this.props.history.length;
+		console.log(this.props.history);
 		return (
 			<div className={styles.box}>
 				<ColumnTitle title="History" />
@@ -41,6 +42,21 @@ class HistoryPage extends Component {
 								</div>
 							)
 						}
+						if (item.type === 'utility') {
+							return (
+								<div className={entryClasses}>
+									<div>
+										{`(${i + 1}) dispatch action - `}
+										<span className={styles.actionSaga}>{item.name}</span>
+									</div>
+									<div className={styles.actionDetailBox}>
+										<div>
+											{`	${item.message}`}
+										</div>
+									</div>
+								</div>
+							)
+						}
 						return (
 							<div className={entryClasses}>
 								<div>
@@ -51,7 +67,6 @@ class HistoryPage extends Component {
 									<div>
 										{`	${item.message}`}
 									</div>
-									{item.sagaListener && <div>{'=> triggers Saga'}</div>}
 								</div>
 							</div>
 						);
